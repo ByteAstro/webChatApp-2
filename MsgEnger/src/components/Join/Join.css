@@ -1,0 +1,94 @@
+.JoinPage {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.JoinContainer {
+    border: 2px solid white;
+    height: 70%;
+    padding: 20px 0;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.JoinContainer>img {
+    margin: 10px;
+    width: 6vmax;
+}
+
+.JoinContainer>h1 {
+    color: #fff;
+    font-size: 2.5vmax;
+    width: 25vmax;
+    text-align: center;
+    padding: 1vmax;
+    border-bottom: 0.2vmax solid white;
+}
+
+#joinInput {
+    margin: 2vmax;
+    width: 25vmax;
+    padding: 2vmax;
+    border: none;
+    outline: none;
+    font-size: 1.2vmax;
+    font-weight: 600;
+}
+
+.joinbtn {
+    width: 25vmax;
+    padding: 1.5vmax;
+    border: none;
+    outline: none;
+    font-family: 'Merriweather', serif;
+    font-size: 1.5vmax;
+    background-color: crimson;
+    color: #fff;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.joinbtn:hover {
+    background-color: rgb(180, 27, 58);
+}
+
+/* Media queries ----------------------------------- */
+@media (max-aspect-ratio: 7/10) {
+    .JoinContainer {
+        width: 94%;
+        height: 80%;
+        border: 2px solid white;
+        border-bottom-color: transparent;
+        border-top-color: transparent;
+        padding: 15vmax 0;
+    }
+
+    .JoinContainer>img {
+        width: 8vmax;
+    }
+
+    .JoinContainer>h1 {
+        font-size: 3vmax;
+        padding: 2vmax;
+    }
+
+    #joinInput {
+        margin: 2vmax;
+        margin-top: 10vmax;
+        width: 25vmax;
+        font-size: 2vmax;
+        font-weight: 600;
+        word-wrap: break-word;
+    }
+
+    .joinbtn {
+        width: 25vmax;
+        font-size: 2vmax;
+    }
+}
